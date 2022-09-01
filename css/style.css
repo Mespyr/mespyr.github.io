@@ -1,3 +1,35 @@
 body {
-	background-color: #363636;
+	padding: 0;
+	background-color: #191919;
+	font-family: monospace
+}
+
+#sidebar {
+	background-color: #0f0f0f;
+	color: #e7e7e7;
+
+	height: 100%;
+	width: 300px;
+
+	position: fixed;
+	text-align: center;	
+	z-index: 1;
+	top: 0;
+	left: 0;
+	overflow: hidden;
+}
+
+#sidebar .pfp {
+	height: 120px;
+	border-radius: 50%;
+	border: 5px solid #4c4c4c;
+}
+
+#main {
+	margin-left: 300px;
+	color: #e7e7e7;
+}
+
+#main h1 {
+	text-align: center;
 }
