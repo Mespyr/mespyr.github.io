@@ -23,6 +23,15 @@ body {
 	height: 120px;
 	border-radius: 50%;
 	border: 5px solid #4c4c4c;
+	margin: 40px;
+}
+
+#sidebar a {
+	padding-bottom: 10px;
+	text-decoration: none;
+	color: #4c4c4c;
+	display: block;
+	font-size: 25px;
 }
 
 #main {
