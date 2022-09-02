@@ -4,6 +4,7 @@ body {
 	font-family: monospace
 }
 
+/* sidebar */
 #sidebar {
 	background-color: #0f0f0f;
 	color: #e7e7e7;
@@ -19,14 +20,14 @@ body {
 	overflow: hidden;
 }
 
-#sidebar .pfp {
+#sidebar #pfp-link {
 	height: 120px;
 	border-radius: 50%;
 	border: 5px solid #4c4c4c;
 	margin: 40px;
 }
 
-#sidebar a {
+#sidebar .nav-links {
 	padding-bottom: 10px;
 	text-decoration: none;
 	color: #4c4c4c;
@@ -34,11 +35,18 @@ body {
 	font-size: 25px;
 }
 
-#main {
-	margin-left: 300px;
+#sidebar .nav-links:hover {
 	color: #e7e7e7;
 }
+#sidebar #pfp-link:hover {
+	filter: invert();
+}
 
-#main h1 {
-	text-align: center;
+/* main section */
+#main {
+	margin-left: 300px;
+	padding-left: 20px;
+	padding-right: 20px;
+	font-size: 15px;
+	color: #e7e7e7;
 }
