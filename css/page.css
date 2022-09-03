@@ -1,0 +1,15 @@
+body {
+	padding: 0;
+	background-color: #191919;
+	font-family: monospace
+}
+
+/* main section */
+#main {
+	margin-left: 300px;
+	padding-left: 30px;
+	padding-right: 30px;
+	padding-top: 20px;
+	font-size: 15px;
+	color: #e7e7e7;
+}
