@@ -1,6 +1,8 @@
+@import "colors.css";
+
 body {
 	padding: 0;
-	background-color: #191919;
+	background-color: var(--page-bg);
 	font-family: monospace
 }
 
@@ -11,5 +13,5 @@ body {
 	padding-right: 30px;
 	padding-top: 20px;
 	font-size: 15px;
-	color: #e7e7e7;
+	color: var(--foreground);
 }

@@ -7,6 +7,7 @@
 		<title>Hello!</title>
 		<link rel="stylesheet" href="css/page.css">
 		<link rel="stylesheet" href="css/sidebar.css">
+		<link rel="stylesheet" href="css/theme_toggler.css">
 	</head>
 
 	<body>
@@ -15,13 +16,25 @@
 			<a class="nav-links" href="projects.html">Projects</a>
 			<a class="nav-links" href="music.html">Music</a>
 			<a class="nav-links" href="art.html">Art</a>
+			<a class="nav-links" href="#">Sheet Music</a> <!-- TODO: make sheet music page -->
+			
+			<h2>Change Theme</h2>
+			<div id="theme-toggler">
+				<span>Brown</span>
+				<label id="switch">
+					<input id="toggle_checkbox" type="checkbox" onclick="change_theme()">
+					<span id="slider"></span>
+				</label>
+				<span>Dark</span>
+			</div>
 		</div>
 
 		<div id="main">
-			<h1>Hello World!</h1>
+			<h1>Hello People!</h1>
 			My name is Senuk, and this is my website/portfolio.
 			This website isn't anywhere near being done.
 		</div>
-	</body>
 
+		<script src="js/theme_toggler.js"></script>
+	</body>
 </html>

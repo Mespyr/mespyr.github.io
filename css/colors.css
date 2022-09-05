@@ -1,0 +1,13 @@
+body {
+	--sidebar-bg: #0f0f0f;
+	--page-bg: #191919;
+	--dull: #4c4c4c;
+	--foreground: #e7e7e7;
+}
+
+body .active {
+	--sidebar-bg: #ffffff;
+	--page-bg: #191919;
+	--dull: #4c4c4c;
+	--foreground: #e7e7e7;
+}
