@@ -23,7 +23,7 @@
 	transition: 0.2s;
 }
 #sidebar #pfp-link:hover {
-	/* filter: blur(2px); */
+	filter: blur(2px);
 	transform: translateY(-2px);
 	box-shadow: 0 4px 12px 0 #000000, 0 6px 20px 0 #000000;
 	transition: 0.2s;
