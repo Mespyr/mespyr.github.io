@@ -40,6 +40,6 @@ if (theme_color == "")
 
 // if theme was set to dark
 if (theme_color == "dark") {
-	checkbox.checkbox = true;
+	checkbox.checked = true;
 	document.body.classList.add('active');
 }
