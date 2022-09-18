@@ -43,7 +43,7 @@
 
 /* sections in sidebar */
 #sidebar h2 {
-	color: var(--foreground);
+	color: var(--dull);
 	border-top: 1px solid var(--dull);
 	margin-top: 40px;
 	padding-top: 25px;
