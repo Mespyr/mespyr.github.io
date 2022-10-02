@@ -15,3 +15,23 @@ body {
 	font-size: 15px;
 	color: var(--foreground);
 }
+
+/* flex boxes to store stuff like projects and other info */
+#container {
+	display: flex;
+	direction: row;
+	justify-content: left;
+	width: 100%;
+	flex-wrap: wrap;
+	padding-top: 20px;
+}
+
+#container div {
+	border-radius: 5px;
+	margin: 20px;
+	width: 600px;
+	height: 500px;
+	background-color: var(--sidebar-bg);	
+	box-shadow: 0 5px 20px #000000;
+	padding: 20px;
+}
