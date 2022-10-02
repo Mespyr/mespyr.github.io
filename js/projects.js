@@ -4,7 +4,7 @@ fetch('./data/projects.json')
 
 	json.forEach(function(proj, idx, arr) {
 		// create html out of data in json
-		let div = document.creatElement('div')
+		let div = document.createElement('div')
 		div.innerHTML = "<h2>" + proj.name + "</h2>" +
 			"Link: " + proj.link
 
