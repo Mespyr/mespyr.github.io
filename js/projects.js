@@ -6,7 +6,7 @@ fetch('./data/projects.json')
 		// create html out of data in json
 		let sect = document.createElement('a')
 		sect.href = proj.link
-		sect.innerHTML = "<div><h2>" + proj.name + "</h2></div>"
+		sect.innerHTML = "<h2>" + proj.name + "</h2>" + proj.desc
 
 		// get container and insert 'div' at the end of it
 		let container = document.getElementById("container")

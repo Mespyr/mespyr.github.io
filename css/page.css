@@ -38,6 +38,11 @@ body {
 	width: 600px;
 	height: 500px;
 	box-shadow: 0 0px 20px 0 #000000;
+	font-size: 18px;
+}
+
+#container a>h2 {
+	font-size: 22px;
 }
 
 #container a:hover {
