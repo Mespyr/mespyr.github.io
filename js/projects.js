@@ -10,6 +10,6 @@ fetch('./data/projects.json')
 
 		// get container and insert 'div' at the end of it
 		let container = document.getElementById("container")
-		container.insertBefore(div, null)
+		container.insertBefore(sect, null)
 	})
 });
