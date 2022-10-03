@@ -27,7 +27,7 @@ body {
 }
 
 .container-item {
-	color: var(--foreground);
+	color: var(--dull);
 	background-color: var(--sidebar-bg);
 	text-decoration: none;
 	border-radius: 10px;
