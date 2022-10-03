@@ -5,6 +5,7 @@ fetch('./data/projects.json')
 	json.forEach(function(proj, idx, arr) {
 		// create html out of data in json
 		let sect = document.createElement('a')
+		sect.class = "container-item"
 		sect.href = proj.link
 		sect.innerHTML = "<h2>" + proj.name + "</h2>" + proj.desc
 

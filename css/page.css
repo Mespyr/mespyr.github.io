@@ -16,7 +16,7 @@ body {
 	color: var(--foreground);
 }
 
-/* flex boxes to store stuff like projects and other info */
+/* flex boxes put in some of the pages */
 #container {
 	display: flex;
 	direction: row;
@@ -26,7 +26,7 @@ body {
 	padding-top: 20px;
 }
 
-#container a {
+.container-item {
 	color: var(--foreground);
 	background-color: var(--sidebar-bg);
 	text-decoration: none;
@@ -41,11 +41,11 @@ body {
 	font-size: 18px;
 }
 
-#container a>h2 {
+.container-item h2 {
 	font-size: 22px;
 }
 
-#container a:hover {
+.container-item:hover {
 	transform: scale(1.02);
 	box-shadow: 0 0px 30px 0 #000000;
 	transition: 0.3s;
