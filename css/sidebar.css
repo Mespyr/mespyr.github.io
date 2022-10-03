@@ -3,7 +3,7 @@
 #sidebar {
 	background-color: var(--sidebar-bg);
 	color: var(--foreground);
-	height: 100%;
+	height: calc(100% - 40px);
 	width: 300px;
 	position: fixed;
 	text-align: center;	
@@ -12,6 +12,8 @@
 	left: 0;
 	overflow: hidden;
 	box-shadow: 0 0px 20px #000000;
+	margin: 20px;
+	border-radius: 10px;
 }
 
 /* profile picture */
