@@ -26,12 +26,22 @@ body {
 	padding-top: 20px;
 }
 
-#container div {
-	border-radius: 5px;
+#container a {
+	color: var(--foreground);
+	background-color: var(--sidebar-bg);
+	text-decoration: none;
+	border-radius: 10px;
 	margin: 20px;
+	padding: 10px;
+	padding-left: 30px;
+	padding-right: 30px;
 	width: 600px;
 	height: 500px;
-	background-color: var(--sidebar-bg);	
-	box-shadow: 0 5px 20px #000000;
-	padding: 20px;
+	box-shadow: 0 0px 20px 0 #000000;
+}
+
+#container a:hover {
+	transform: scale(1.02);
+	box-shadow: 0 0px 30px 0 #000000;
+	transition: 0.3s;
 }

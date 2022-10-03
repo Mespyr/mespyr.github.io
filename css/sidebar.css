@@ -11,7 +11,7 @@
 	top: 0;
 	left: 0;
 	overflow: hidden;
-	box-shadow: 0 10px 20px #000000;
+	box-shadow: 0 0px 20px #000000;
 }
 
 /* profile picture */
@@ -24,8 +24,8 @@
 }
 #sidebar #pfp-link:hover {
 	filter: blur(2px);
-	transform: translateY(-2px);
-	box-shadow: 0 4px 12px 0 #000000, 0 6px 20px 0 #000000;
+	transform: scale(1.05);
+	box-shadow: 0 0px 20px 0 #000000;
 	transition: 0.2s;
 }
 

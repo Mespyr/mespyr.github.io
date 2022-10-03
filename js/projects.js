@@ -4,9 +4,9 @@ fetch('./data/projects.json')
 
 	json.forEach(function(proj, idx, arr) {
 		// create html out of data in json
-		let div = document.createElement('div')
-		div.innerHTML = "<h2>" + proj.name + "</h2>" +
-			"Link: " + proj.link
+		let sect = document.createElement('a')
+		sect.href = proj.link
+		sect.innerHTML = "<div><h2>" + proj.name + "</h2></div>"
 
 		// get container and insert 'div' at the end of it
 		let container = document.getElementById("container")
