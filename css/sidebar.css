@@ -48,6 +48,5 @@
 	color: var(--dull);
 	border-top: 1px solid var(--dull);
 	margin-top: 40px;
-	padding-top: 25px;
-	padding-bottom: 10px;
+	padding: 25px 0px 10px 0px;
 }

@@ -11,8 +11,7 @@
   display: inline-block;
   width: 60px;
   height: 30px;
-  margin-left: 10px;
-  margin-right: 10px;
+  margin: 0px 10px 0px 10px;
 }
 
 /* Hide default HTML checkbox */

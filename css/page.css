@@ -9,9 +9,6 @@ body {
 /* main section */
 #main {
 	margin-left: 320px;
-	padding-left: 30px;
-	padding-right: 30px;
-	padding-top: 20px;
-	font-size: 18px;
+	padding: 20px 30px 0px 30px;
 	color: var(--foreground);
 }
