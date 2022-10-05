@@ -6,8 +6,15 @@
 	border-radius: 10px;
 	font-size: 18px;
 	box-shadow: 0 0px 20px 0 #000000;
-	padding: 10px 30px 30px 30px;
+	padding: 10px 30px 40px 30px;
 	margin: 20px 0px 40px 10px;
+}
+.text-block h2 {
+	font-size: 22px;
+}
+
+.text-block h4 {
+	margin-bottom: 5px;
 }
 
 /* flex boxes to organise projects and move them based in screen width */
