@@ -4,71 +4,35 @@
 		<meta charset="UTF-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 		<meta http-equiv="X-UA-Compatible" content="ie=edge">
-		<title>About Me</title>
+		<link rel="stylesheet" href="css/trailer.css">
 		<link rel="stylesheet" href="css/page.css">
-		<link rel="stylesheet" href="css/sidebar.css">
-		<link rel="stylesheet" href="css/theme_toggler.css">
-		<link rel="stylesheet" href="css/text_boxes.css">
+		<link rel="stylesheet" href="css/cards.css">
+		<title>Mespyr</title>
 	</head>
-
+	
 	<body>
-		<div id="sidebar">
-			<a href="index.html"><img id="pfp-link" src="img/pfp.png"></a>
-			<a class="nav-links" href="projects.html">Projects</a>
-			<a class="nav-links" href="dotfiles.html">Dotfiles</a>
-			<a class="nav-links" href="music.html">Music</a>
-			<a class="nav-links" href="art.html">Art</a>
-			<a class="nav-links" href="sheetmusic.html">Sheet Music</a>
-			
-			<h2>Change Theme</h2>
-			<div id="theme-toggler">
-				<span>Dark</span>
-				<label id="switch">
-					<input id="theme_input" type="checkbox">
-					<span id="slider"></span>
-				</label>
-				<span>Nord</span>
-			</div>
+		<div id="trailer">
+			<p id="trailer-text"></p>
 		</div>
 
-		<div id="main">
-
-			<div class="text-block">
+		<div id="header">
+			<h1>Hello World!</h1>
+			<div id="header-text">
 				<h2>About Me</h2>
-				Hello, my name is Senuk and I am currently in 8th grade. I taught myself to program when I was 10, and I've been programming ever since as a hobby.
+				Hello, my name is Senuk and I am currently in 8th grade.
+				I taught myself to program when I was 10, and I've been programming ever since as a hobby.
 				I really enjoy playing the baritone saxophone, and I love playing both jazz and classical pieces.
 			</div>
-
-			<div class="text-block">
-				<h2>Programming Journey</h2>
-
-				<h4>2018-2019</h4>
-				I started programming when I was 10 because I was taking an 'Introduction to Web Development' Harvard edX course, where I learned to program in HTML, CSS, and Python.
-				I quit the course around halfway through because I was getting bored and I took really long on the first challenge, so I didn't have much time to do the others lol.
-				</br></br>
-				After that, I had started watching other programming tutorials for a bit to try to learn how to make other cool apps, which is how I found out about the TKinter gui framework.
-				I used that to make a lot of projects that I was looking at. Coding with TKinter helped me a lot with understanding how object-oriented programming worked in general and helped me
-				get passed the barrier of only being able to code from tutorials.
-
-				<h4>2020</h4>
-				I started to become more interested in the low level programming after I read a lot about Python being extremely slow, especially for the types of projects I wanted to make at the time.
-				I wanted to code in a compiled programming language so my code would be faster and more cool looking to people who saw it. 
-				</br></br>
-				I turned to C++ to be my new, hopefully main, programming language and I struggled with it. A lot.
-				But soon I got comfortable coding in C++, just like Python, and I started working on my own projects.
-				At this point I kind of wish I had learned a different low level language like Rust, but I'm pretty sure Rust was either non-existent around this time, or not well known enough for me to have heard of it.
-
-				<h4>2021-2022</h4>
-				After a while, I became interested in how programming languages worked, after watching someone make their own in a video, and watching videos on esoteric languages.
-				I started working on making my own by trying to find some tutorials on how they worked. I also found some really good tutorials and devlogs online.
-				</br></br>
-				During this time, I also became interested in game development. I tried learning OpenGL for a bit, quit because I didn't understand it at all, and tried learning Unity
-				because I thought that since everyone was using it to make their games, it must be really good. I tried Unity, and got really annoyed with how slow it was on my laptop, so I decided to go back with OpenGL and try to actually properly follow a guide.
-				Atleast that is what I would do if I didn't have school work to do.
-			</div>
-
 		</div>
 
-		<script src="js/theme_toggler.js"></script>
+		<div id="card-container">
+			<a class="image-card trailer-interact" style="background-image: url(img/preview/programming.png)" href="programming.html">Programming</a>
+			<a class="image-card trailer-interact" style="background-image: url(img/preview/music.png)" href="music.html">Music</a>
+			<a class="image-card trailer-interact" style="background-image: url(img/preview/dotfiles.png)" href="dotfiles.html">Dotfiles</a>
+			<a class="image-card trailer-interact" style="background-image: url(img/preview/art.png)" href="art.html">Art</a>
+			<a class="image-card trailer-interact" style="background-image: url(img/preview/project.png)" href="projects.html">Projects</a>
+		</div>
+
+		<script src="js/trailer.js"></script>
 	</body>
 </html>

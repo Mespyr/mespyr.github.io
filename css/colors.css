@@ -1,13 +1,12 @@
 body {
-	--sidebar-bg: #191919;
-	--page-bg: #262626;
-	--dull: #4c4c4c;
-	--foreground: #e7e7e7;
-}
+	--card-bg: #191919;
+	--card-fg: #e7e7e7;
 
-body.active {
-	--sidebar-bg: #212529;
-	--page-bg: #343a40;
-	--dull: #6c757d;
-	--foreground: #dee2e6;
+	--header-bg: #e7e7e7;
+	--header-fg: black;
+
+	--trailer-bg: #e7e7e7;
+	--trailer-fg: black;
+
+	--site-bg: #272727;
 }
