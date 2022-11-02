@@ -2,85 +2,28 @@
 
 body {
 	background-color: var(--site-bg);
-	margin: 0px;
+	margin: 40px;
 	font-family: monospace;
 	height: 100%;
 	width: 100%;
 }
 
-/* header */
-#header {
-	position: fixed;
-	z-index: 3;
-	top: 1%;
-	left: 1%;
+#mainpage {
+	position: absolute;
+	width: calc(100% - 80px);
+	height: calc(100% - 80px);
+	display: flex;
 }
 
-/* header title */
-#header h1 {
-	display: inline-block;
-	padding: 10px;
-	border-radius: 5px;
-	box-shadow: 0 0px 20px 0 black;
-	opacity: 0.6;
-	transition: opacity 400ms ease;
-	color: var(--header-fg);
-	background-color: var(--header-bg);
-}
-#header h1:hover {
-	opacity: 0.9;
-}
-
-/* header back button */
-#header a {
-	display: inline-block;
-	padding: 10px;
-	border-radius: 5px;
-	box-shadow: 0 0px 20px 0 black;
-	opacity: 0.6;
-	transition: opacity 400ms ease;
-	color: var(--header-fg);
-	background-color: var(--header-bg);
-	font-size: 20px;
-	border: none;
-	font-weight: 700;
-}
-#header a img {
-	height: 20px;
-	width: 20px;
-}
-#header a:hover {
-	opacity: 0.9;
-}
-
-/* header text */
-#header-text {
-	visibility: hidden;
-	opacity: 0;
-	position: relative;
-	height: 0;
-	transition: opacity 400ms ease;
-	width: 400px;
-	max-height: 800px;
-	padding: 20px;
-	padding-top: 10px;
-	border-radius: 5px;
-	box-shadow: 0 0px 20px 0 black;
-	color: var(--header-fg);
-	background-color: var(--header-bg);
-	font-size: 18px;
-	overflow-y: auto;
-}
-#header:hover > #header-text {
-	visibility: visible;
+#toc {
+	border: 2px solid #e7e7e760;
+	width: 15%;
 	height: 100%;
-	opacity: 0.9;
 }
-#header-text h2 {
-	padding: 0;
-	margin-bottom: 5;
-	font-size: 18px;
-}
-#header-text h4 {
-	margin-bottom: 5px;
+
+#content {
+	border: 2px solid #e7e7e760;
+	border-left: none;
+	height: 100%;
+	width: 85%;
 }
