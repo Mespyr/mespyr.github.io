@@ -1,11 +1,17 @@
-.nav-container {
+@import "colors.css";
+
+#nav-container {
 	position: absolute;
-	width: calc(100% - 80px);
-	height: calc(100% - 80px);
+	width: calc(100% - 200px);
+	height: calc(100% - 200px);
 	display: flex;
 }
 
-.nav-header {
+#nav-container-hidden {
+	display: none;
+}
+
+.nav-item {
 	width: 25%;
 	height: 100%;
 	opacity: 0.6;
@@ -17,19 +23,19 @@
 	background-size: cover;
 	position: relative;
 }
-.nav-header:not(:first-child) {
+.nav-item:not(:first-child) {
 	border-left: none;
 }
-.nav-header:hover {
+.nav-item:hover {
 	border-left: 2px solid #e7e7e7;
 	opacity: 0.9;
 	width: 50%;
 }
-.prev-nav-on-hover {
+.prev-nav-item-on-hovor {
 	border-right: none;
 }
 
-.nav-header div {
+.nav-item div {
 	text-align: center;
 	font-size: 20px;
 	color: var(--header-fg);
@@ -40,4 +46,8 @@
 	left: 50%;
 	top: 50%;
 	transform: translate(-50%, -50%);
+}
+
+.nav-item-hidden {
+	display: none;
 }

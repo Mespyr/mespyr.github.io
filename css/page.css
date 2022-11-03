@@ -2,28 +2,8 @@
 
 body {
 	background-color: var(--site-bg);
-	margin: 40px;
+	margin: 100px;
 	font-family: monospace;
 	height: 100%;
 	width: 100%;
-}
-
-#mainpage {
-	position: absolute;
-	width: calc(100% - 80px);
-	height: calc(100% - 80px);
-	display: flex;
-}
-
-#toc {
-	border: 2px solid #e7e7e760;
-	width: 15%;
-	height: 100%;
-}
-
-#content {
-	border: 2px solid #e7e7e760;
-	border-left: none;
-	height: 100%;
-	width: 85%;
 }
