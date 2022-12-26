@@ -1,9 +1,0 @@
-@import "colors.css";
-
-body {
-	background-color: var(--site-bg);
-	margin: 100px;
-	font-family: monospace;
-	height: 100%;
-	width: 100%;
-}
