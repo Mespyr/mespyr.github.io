@@ -22,23 +22,12 @@ body {
 	font-size: 40px;
 	font-weight: 800;
 	max-width: 500px;
-	margin-bottom: 50px;
-}
-
-
-.diagonal-line:after{
-	content: "";
-	position: absolute;
-	border-top: 10px solid #42be65;
-	width: 450px;
-	transform: translateX(500px) rotate(290deg) translateX(-50px);
-	transform-origin: 0% 0%;
 }
 
 /* main content */
 #main {
-	padding-top: 60px;
-	max-width: 580px;
+	padding-top: 50px;
+	max-width: 500px;
 }
 
 /* colors */
