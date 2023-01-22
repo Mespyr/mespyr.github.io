@@ -36,9 +36,17 @@ function init_terminal()
 			mouse_delta_y = mouse_y - r.clientY;
 			mouse_x = r.clientX;
 			mouse_y = r.clientY;
-			// set the element's new position:
-			_window.style.top = (_window.offsetTop - mouse_delta_y) + "px";
-			_window.style.left = (_window.offsetLeft - mouse_delta_x) + "px";
+			top_pos = _window.offsetTop - mouse_delta_y;
+			left_pos = _window.offsetLeft - mouse_delta_x;
+			// if terminal has reached edge of screen, do not move it
+			if (top_pos + _window.clientHeight > window.innerHeight - 10);
+			else if (left_pos + _window.clientWidth > window.innerWidth - 10);
+			else if (top_pos < 10 || left_pos < 10);
+			else {
+				// set the element's new position:
+				_window.style.top = (top_pos) + "px";
+				_window.style.left = (left_pos) + "px";
+			}
 		}
 	}
 
