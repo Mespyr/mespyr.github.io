@@ -56,8 +56,8 @@
 	font-size: 18px;
 	padding: 0;
 	display: inline-block;
-	width: fit-content;
 	flex: 2;
+	max-width: 600px;
 }
 #command-prompt-wrapper {
 	display: flex;

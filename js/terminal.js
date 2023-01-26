@@ -65,9 +65,9 @@ function terminal_loop()
 		// destroy old prompt and replace it with regular line
 		if (current_prompt != null)
 		{
-			let text = current_prompt.value;
+			let text = current_prompt.textContent;
 			current_prompt.parentNode.parentNode.removeChild(current_prompt.parentNode);
-			terminal.appendChild(create_line("<span class='pink'>>>></span> " + text));
+			terminal.appendChild(create_line("<span class='pink'>user@mespyr ~</span> " + text));
 
 			// parse prompt
 			switch (text)
@@ -78,13 +78,23 @@ function terminal_loop()
 					terminal.appendChild(create_line("Hello! Welcome to my website."));
 					terminal.appendChild(create_line("Here's a list of all the runnable commands."));
 					terminal.appendChild(create_line("&nbsp;"));
-					terminal.appendChild(create_line("&nbsp;&nbsp;&nbsp;&nbsp;help&nbsp;&nbsp;&nbsp; display this message"));
-					terminal.appendChild(create_line("&nbsp;&nbsp;&nbsp;&nbsp;clear&nbsp;&nbsp; clear the terminal"));
+					terminal.appendChild(create_line("&nbsp;&nbsp;&nbsp;&nbsp;help&nbsp;&nbsp;&nbsp;&nbsp; display this message"));
+					terminal.appendChild(create_line("&nbsp;&nbsp;&nbsp;&nbsp;clear&nbsp;&nbsp;&nbsp; clear the terminal"));
+					terminal.appendChild(create_line("&nbsp;&nbsp;&nbsp;&nbsp;whoami&nbsp;&nbsp; print user info"));
 					terminal.appendChild(create_line("&nbsp;"));
 					break;
 				case "clear":
 					terminal.textContent = '';
 					break
+				case "whoami":
+					terminal.appendChild(create_line("My name is Senuk Wijesinghe!"));
+					terminal.appendChild(create_line("&nbsp;"));
+					terminal.appendChild(create_line("I am currently in 8th grade and "));
+					terminal.appendChild(create_line("have been programming for 5 years."));
+					terminal.appendChild(create_line("&nbsp;"));
+					terminal.appendChild(create_line("I also enjoy playing the bari sax"));
+					terminal.appendChild(create_line("and drawing in my free time."));
+					break;
 				default:
 					terminal.appendChild(create_line(text + ": command not found "));
 			}
@@ -111,9 +121,9 @@ function create_line(message)
 }
 function create_prompt()
 {
-	const elem = create_line(">>>&nbsp;<input id='command-prompt' type='text'>");
+	const elem = create_line("user@mespyr ~&nbsp;<span contenteditable='true' id='command-prompt' type='text'>");
 	elem.classList.add("pink");
-	elem.classList.add("bold");
+	// elem.classList.add("bold");
 	elem.id = "command-prompt-wrapper";
 	return elem;
 }
