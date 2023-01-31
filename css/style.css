@@ -27,6 +27,13 @@ body {
 .cyan {
 	color: #3ddbd9;
 }
+.blue {
+	color: #78a9ff;
+}
 .bold {
 	font-weight: 900;
+}
+.glow {
+	color: #78a9ff;
+    text-shadow: 0 0 5px #78a9ff;
 }
