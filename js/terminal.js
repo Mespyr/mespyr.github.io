@@ -1,4 +1,5 @@
 const terminal = document.getElementById("terminal");
+const PS1 = "user@mespyr ~"
 document.body.onload = init_terminal;
 
 /* autofocus to current prompt when pressing a key down */
@@ -75,10 +76,10 @@ function terminal_loop()
 		{
 			let text = current_prompt.textContent;
 			current_prompt.parentNode.parentNode.removeChild(current_prompt.parentNode);
-			terminal.appendChild(create_line("<span class='pink'>user@mespyr ~</span> " + text));
-
+			terminal.appendChild(create_line(`<span class='pink'>${PS1}</span> ${text}`));
+			console.log(text);
 			// parse prompt
-			switch (text)
+			switch (text.trim())
 			{
 				case "":
 					break;
@@ -93,13 +94,13 @@ function terminal_loop()
 					terminal.appendChild(create_line("&nbsp;"));
 					break;
 				case "clear":
-					terminal.textContent = '';
+				    terminal.textContent = '';
 					break
 				case "whoami":
 					terminal.appendChild(create_line("My name is Senuk Wijesinghe!"));
 					terminal.appendChild(create_line("&nbsp;"));
-					terminal.appendChild(create_line("I am currently in 8th grade and "));
-					terminal.appendChild(create_line("have been programming for 5 years."));
+					terminal.appendChild(create_line("I am currently a sophomore in highschool"));
+					terminal.appendChild(create_line("have been programming for 7 years."));
 					terminal.appendChild(create_line("&nbsp;"));
 					terminal.appendChild(create_line("I also enjoy playing the bari sax"));
 					terminal.appendChild(create_line("and drawing in my free time."));
@@ -135,7 +136,7 @@ function create_line(message)
 }
 function create_prompt()
 {
-	const elem = create_line("user@mespyr ~ <span contenteditable='true' id='command-prompt' type='text'>");
+	const elem = create_line(`${PS1} <span contenteditable='true' id='command-prompt' type='text'>`);
 	elem.classList.add("pink");
 	// elem.classList.add("bold");
 	elem.id = "command-prompt-wrapper";
