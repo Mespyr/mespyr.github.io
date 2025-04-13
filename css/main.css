@@ -27,7 +27,7 @@ nav ul {
   padding: 0;
   display: flex;
   justify-content: center;
-  gap: 25px;
+  gap: 30px;
 }
 
 nav a {
@@ -62,7 +62,7 @@ footer {
 
 .content-box {
   background-color: rgba(255, 255, 255, 0.10);
-  padding: 20px 40px 20px 40px;
+  padding: 30px 40px 30px 40px;
   margin: 0 30px 30px 30px;
   border: 2px solid #8e4e97;
   border-radius: 5px;
@@ -75,26 +75,23 @@ footer {
   font-size: 1.8rem;
   font-family: 'Pacifico', cursive;
   color: #ff7fa3;
-  margin-bottom: 0px;
+  margin: 0;
 }
 
 .content-box p {
   font-size: 1.1rem;
   color: #f3d9f3;
   line-height: 1.5;
+  margin: 10px 0 0 0;
 }
 
 @media (max-width: 600px) {
   nav ul {
     flex-direction: column;
-    gap: 12px;
+    gap: 10px;
   }
 
   .content-box {
-    padding: 20px 30px 20px 30px;
-  }
-
-  .content-box h3 {
-    font-size: 1.6rem;
+      padding: 20px 30px 20px 30px;
   }
 }
