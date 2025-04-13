@@ -20,6 +20,31 @@ header {
   text-shadow:
     2px 2px 0 #6e3b9d,
     -1px -1px 0 #00000055;
+  animation: flicker 6s infinite;
+}
+
+@keyframes flicker {
+  /* normal state */
+  0%, 18%, 22%, 25%, 53%, 57%, 100% {
+    opacity: 1;
+    text-shadow:
+      2px 2px 0 #6e3b9d,
+      -1px -1px 0 #00000055;
+  }
+  /* light dim */
+  20%, 24%, 55% {
+    opacity: 0.8;
+    text-shadow:
+      2px 2px 0 #6e3b9d88,
+      -1px -1px 0 #00000044;
+  }
+  /* flickered off */
+  23%, 56% {
+    opacity: 0.6;
+    text-shadow:
+      2px 2px 0 #6e3b9d33,
+      -1px -1px 0 #00000022;
+  }
 }
 
 nav ul {
@@ -34,13 +59,14 @@ nav a {
   text-decoration: none;
   color: #fbeffb;
   font-weight: 600;
-  border-bottom: 2px solid transparent;
+  border-bottom: 3px solid transparent;
   transition: border-color 0.3s ease, color 0.3s ease;
 }
 
 nav a:hover {
   border-color: #ff7fa3;
   color: #ffb6d1;
+  font-style: italic;
 }
 
 footer {
@@ -90,7 +116,6 @@ footer {
     flex-direction: column;
     gap: 10px;
   }
-
   .content-box {
       padding: 20px 30px 20px 30px;
   }

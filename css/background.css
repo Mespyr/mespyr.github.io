@@ -2,20 +2,21 @@
   overflow: hidden;
   content: "";
   position: fixed;
-  top: -50%; left: -50%;
-  width: 200%; height: 200%;
+  top: -100%; left: -100%;
+  width: 300%; height: 300%;
   background:
-    radial-gradient(circle at center, rgba(255,255,255,0.08) 2%, transparent 3%) repeat,
-    radial-gradient(circle at center, rgba(255,255,255,0.03) 4%, transparent 5%) repeat,
-    radial-gradient(circle at center, rgba(255,255,255,0.02) 6%, transparent 7%) repeat;
+    radial-gradient(circle at center, rgba(255,255,255,0.10) 2%, transparent 3%) repeat,
+    radial-gradient(circle at center, rgba(255,255,255,0.05) 4%, transparent 5%) repeat,
+    radial-gradient(circle at center, rgba(255,255,255,0.03) 6%, transparent 7%) repeat;
   background-size: 60px 60px, 120px 120px, 180px 180px;
   background-position: center;
   z-index: 0;
   pointer-events: none;
-  animation: rotate_grooves 50s linear infinite;
-  mask-image: radial-gradient(circle at center, rgba(0, 0, 0, 1) 40%, rgba(0, 0, 0, 0) 100%);
-  -webkit-mask-image: radial-gradient(circle at center, rgba(0, 0, 0, 1) 40%, rgba(0, 0, 0, 0) 100%);
+  animation: rotate_grooves 45s linear infinite;
+  mask-image: radial-gradient(circle at center, black 10%, transparent 30%);
+  -webkit-mask-image: radial-gradient(circle at center, black 10%, transparent 30%);
   opacity: 0.9;
+  background-repeat: repeat;
 }
 
 .grooves-background::after {
@@ -29,14 +30,49 @@
   z-index: 2;
   background: radial-gradient(
       circle at center,
-    rgba(0, 0, 0, 0) 50%,
-    rgba(0, 0, 0, 0.05) 70%,
-    rgba(0, 0, 0, 0.15) 85%,
-    rgba(0, 0, 0, 0.3) 100%
+    rgba(0, 0, 0, 0) 40%,
+    rgba(0, 0, 0, 0.1) 70%,
+    rgba(0, 0, 0, 0.2) 80%,
+    rgba(0, 0, 0, 0.45) 100%
   );
 }
 
 @keyframes rotate_grooves {
   from { transform: rotate(0deg); }
   to { transform: rotate(360deg); }
+}
+
+.crt-overlay {
+  pointer-events: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 10;
+  mix-blend-mode: overlay;
+
+  background:
+    repeating-linear-gradient(
+      to bottom,
+      rgba(255, 255, 255, 0.1) 5px,
+      rgba(255, 255, 255, 0.2) 10px,
+      transparent 10px,
+      transparent 15px
+    );
+
+  animation: crtFlicker 0.5s infinite, crtWarp 5s ease-in-out infinite;
+  opacity: 0.3;
+}
+
+@keyframes crtFlicker {
+  0%, 100% { opacity: 0.3; }
+  50% { opacity: 0.4; }
+}
+
+@keyframes crtWarp {
+  0%, 100% { transform: none; }
+  30% { transform: skewX(0.2deg) translateY(-1px); }
+  50% { transform: skewX(-0.4deg) translateY(1px); }
+  70% { transform: skewX(0.1deg) translateY(0px); }
 }
