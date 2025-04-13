@@ -1,0 +1,104 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Montserrat', sans-serif;
+  background: #1c1b2f;
+  color: #fbeffb;
+  overflow-x: hidden;
+}
+
+header {
+  text-align: center;
+  margin-bottom: 80px;
+}
+
+.logo {
+  font-family: 'Pacifico', cursive;
+  font-size: 3rem;
+  color: #ff7fa3;
+  margin-bottom: 10px;
+  text-shadow:
+    2px 2px 0 #6e3b9d,
+    -1px -1px 0 #00000055;
+}
+
+nav ul {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+}
+
+nav a {
+  text-decoration: none;
+  color: #fbeffb;
+  font-weight: 600;
+  border-bottom: 2px solid transparent;
+  transition: border-color 0.3s ease, color 0.3s ease;
+}
+
+nav a:hover {
+  border-color: #ff7fa3;
+  color: #ffb6d1;
+}
+
+footer {
+  margin-top: 60px;
+  text-align: center;
+  font-size: 0.9rem;
+  color: #cbbcd2;
+  border-top: 1px solid #5f5581;
+  padding-top: 20px;
+}
+
+.wrapper {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 40px 20px;
+  position: relative;
+  z-index: 2;
+}
+
+.content-box {
+  background-color: rgba(255, 255, 255, 0.10);
+  padding: 30px 40px;
+  margin: 0 30px 30px 30px;
+  border: 2px solid #8e4e97;
+  border-radius: 5px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+  position: relative;
+  z-index: 2;
+}
+
+.content-box h3 {
+  font-size: 1.8rem;
+  font-family: 'Pacifico', cursive;
+  color: #ff7fa3;
+  margin-bottom: 15px;
+}
+
+.content-box p {
+  font-size: 1.1rem;
+  color: #f3d9f3;
+  line-height: 1.5;
+}
+
+@media (max-width: 600px) {
+  .logo {
+    font-size: 2.2rem;
+  }
+
+  nav ul {
+    flex-direction: column;
+    gap: 15px;
+  }
+
+  .content-box {
+    padding: 20px;
+  }
+
+  .content-box h3 {
+    font-size: 1.6rem;
+  }
+}
