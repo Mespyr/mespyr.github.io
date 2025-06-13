@@ -55,8 +55,8 @@
   background:
     repeating-linear-gradient(
       to bottom,
-      rgba(255, 255, 255, 0.1) 5px,
-      rgba(255, 255, 255, 0.2) 10px,
+      rgba(255, 255, 255, 0.2) 5px,
+      rgba(255, 255, 255, 0.3) 10px,
       transparent 10px,
       transparent 15px
     );
