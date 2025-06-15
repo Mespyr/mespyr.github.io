@@ -1,0 +1,10 @@
+:root {
+  --background: #202020;
+  --text: #fbeff5;
+  --text-muted: #d4c1ca;
+
+  --accent-main: #ff7fa3;
+  --accent-light: #ffb6da;
+  --accent-dark: #6e3b9d;
+  --accent-mute: #805581
+}

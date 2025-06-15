@@ -1,13 +1,4 @@
-:root {
-  --background: #202020;
-  --text: #fbeff5;
-  --text-muted: #d4c1ca;
-
-  --accent-main: #ff7fa3;
-  --accent-light: #ffb6da;
-  --accent-dark: #6e3b9d;
-  --accent-mute: #805581
-}
+@import "colors.css";
 
 body {
   width: 100vw;
@@ -123,14 +114,14 @@ footer {
   font-size: 1.8rem;
   font-family: 'Limelight', sans-serif;
   color: var(--accent-main);
-  margin: 0;
+  margin: 0 0 10px 0;
 }
 
 .content-box p {
   font-size: 1.1rem;
   color: var(--text);
   line-height: 1.5;
-  margin: 10px 0 0 0;
+  margin: 0;
 }
 
 @keyframes blur_transition {
